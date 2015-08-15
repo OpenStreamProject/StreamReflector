@@ -74,7 +74,7 @@ func reflect(w http.ResponseWriter, r *http.Request) {
 	line = strings.Split(line, ",")[0]
 
 	// Append the channel id
-	line = line + "/channel/" + r.URL.Query().Get("channel")
+	line = line + "/channels/" + r.URL.Query().Get("channel") + "/playlist.m3u8"
 
 	// Redirect to server
 	http.Redirect(w, r, line, 301)
