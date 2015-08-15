@@ -18,10 +18,10 @@ func main() {
 	rand.Seed(time.Now().Unix())
 
 	// Check if we have a port env variable to follow
-	if os.Getenv("port") == "" {
+	if os.Getenv("PORT") == "" {
 		port = "8000"
 	} else {
-		port = os.Getenv("port")
+		port = os.Getenv("PORT")
 	}
 
 	// Print a startup message
