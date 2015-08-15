@@ -1,0 +1,5 @@
+{
+	"ImportPath": "StreamReflector",
+	"GoVersion": "go1.2.1",
+	"Deps": []
+}
